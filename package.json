@@ -1,0 +1,23 @@
+{
+  "name": "itu-auto-login",
+  "version": "1.0.0",
+  "description": "A userscript that automatically logins to several ITU login pages",
+  "main": "gulpfile.coffee",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "^1.0.3",
+    "gulp-coffee": "^2.3.3",
+    "gulp-include": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathias Bastholm",
+  "license": "MIT"
+}
