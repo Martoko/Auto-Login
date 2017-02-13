@@ -11,6 +11,7 @@ rename = require("gulp-rename")
 
 gulp.task 'default', [
   'coffee'
+  'coffee-min'
 ]
 
 gulp.task 'coffee', (cb) ->
@@ -19,10 +20,24 @@ gulp.task 'coffee', (cb) ->
     plumber()
     include()
     coffee({ bare: true })
-    # uglify()
     appendPrepend.prependFile('src/metadata.js')
     rename((path) ->
       path.basename += '.user'
+    )
+    gulp.dest('out')
+  ], cb)
+  return
+
+gulp.task 'coffee-min', (cb) ->
+  pump([
+    gulp.src('src/auto_login.coffee')
+    plumber()
+    include()
+    coffee({ bare: true })
+    uglify()
+    appendPrepend.prependFile('src/metadata.js')
+    rename((path) ->
+      path.basename += '.min.user'
     )
     gulp.dest('out')
   ], cb)

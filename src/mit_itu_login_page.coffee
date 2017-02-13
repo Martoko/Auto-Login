@@ -24,7 +24,7 @@ class MitItuLoginPage extends LoginPage
     for error in errors
       return true if lowerCaseText.includes(error)
     return false
-    
+
   hasError: () ->
     trElements = document.querySelectorAll("tr")
 
