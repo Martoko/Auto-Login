@@ -1,6 +1,11 @@
 # ITU-auto-login
 A userscript that automatically logins to several ITU login pages
 
+## Installing
+
+You can fetch the latest release from the releases tab.
+Installation requires [GreaseMonkey](http://www.greasespot.net/) and opening the *.user.js file in your browser.
+
 ## Building
 
 Install node (for dealing with JavaScript)
