@@ -45,7 +45,7 @@ for (let redirect of redirects) {
       }
     }
 
-    if(window.location !== redirect.redirect_to) {
+    if(window.location.href !== redirect.redirect_to) {
       window.location = redirect.redirect_to;
     }
     break;
