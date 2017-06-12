@@ -45,7 +45,9 @@ for (let redirect of redirects) {
       }
     }
 
-    window.location = redirect.redirect_to;
+    if(window.location !== redirect.redirect_to) {
+      window.location = redirect.redirect_to;
+    }
     break;
   }
 }
@@ -56,7 +58,7 @@ function setFavIcon(sizes) {
     link.type = 'image/png';
     link.rel = 'icon';
     link.sizes = sizes;
-    link.href = 'http://www.stackoverflow.com/favicon-' + sizes + '.png';
+    link.href = 'https://raw.githubusercontent.com/Martoko/Auto-Login/master/favicon/favicon-' + sizes + '.png';
     document.getElementsByTagName('head')[0].appendChild(link);
   })();
 }
