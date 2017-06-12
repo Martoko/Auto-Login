@@ -1,5 +1,5 @@
-# ITU-auto-login
-A userscript that automatically logins to several ITU login pages
+# Auto Login
+A userscript that automatically logins to the sites you have configured under [about:blank#auto_login](about:blank#auto_login)
 
 ## Installing
 
@@ -18,12 +18,12 @@ Install package dependencies
 node install
 ```
 
-Build coffeescript
+Build es6 to es5
 ```
 gulp
 ```
 
-The compiled JavaScript can then be found under `out/auto_login.user.js` and `out/auto_login.min.user.js`
+The compiled JavaScript can then be found under `out/main.user.js`
 
 To automatically build upon file changes in the `src` directory run
 ```
