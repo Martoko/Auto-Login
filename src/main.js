@@ -40,7 +40,7 @@ for (let redirect of redirects) {
     if(redirect.must_have_selector !== "") {
       let must_have_element =   document.querySelector(redirect.must_have_selector);
       if (must_have_element === null) {
-        console.log("Canceling since page does not have: \"" + this.page.must_have_selector + "\"")
+        console.log("Canceling since page does not have: \"" + redirect.must_have_selector + "\"")
         break;
       }
     }
